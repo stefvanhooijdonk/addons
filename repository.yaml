@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Stef van Hooijdonk Samba add-on repository
-url: 'https://github.com/stefvanhooijdonk/addons'
+url: 'https://github.com/stefvanhooijdonk/addons/'
 maintainer: Stef van Hooijdonk <github@personaloffice365.com>
