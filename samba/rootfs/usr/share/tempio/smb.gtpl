@@ -1,7 +1,13 @@
 [global]
    netbios name = {{ env "HOSTNAME" }}
    workgroup = {{ .workgroup }}
-   server string = Samba Home Assistant
+   server string = Samba Home Assistant with WINS
+
+   # stef van hooijdonk - add wins support by default
+   wins support = yes
+   server role = standalone server
+   preferred master = yes
+   domain master = yes
 
    security = user
    ntlm auth = yes
