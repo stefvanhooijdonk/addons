@@ -1,5 +1,6 @@
 ---
 version: 12.4.0
+slug: sambawins
 name: Samba share (WINS)
 description: Expose Home Assistant folders with SMB/CIFS/WINS
 url: https://github.com/stefvanhooijdonk/addons/tree/master/sambawins
