@@ -2,8 +2,9 @@
 
 ## 22.4.1
 
-- Enable config options for WINS Server
-- Enable config options for MasterBrowser mode
+- Enable config options for WINS Server.
+- Enable config options for MasterBrowser mode.
+- Add descriptions for the config options added.
 
 ## 12.4.0
 
