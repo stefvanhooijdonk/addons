@@ -69,6 +69,10 @@ systems that have installed Home Assistant.
 
     Share your configuration over the network using Windows file sharing.
 
+- **[Samba & WINS share](/sambawins/README.md)**
+
+    Share your configuration over the network using Windows file sharing with WINS support.
+
 - **[SSH server](/ssh/README.md)**
 
     Allow logging in remotely to Home Assistant using SSH or just the web terminal with Ingress.
