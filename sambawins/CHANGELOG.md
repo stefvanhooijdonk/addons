@@ -1,5 +1,10 @@
 # Changelog
 
+## 22.4.0
+
+- Enable config options for WINS Server
+- Enable config options for MasterBrowser mode
+
 ## 12.4.0
 
 - Add the ability to enable and disable specific shares, improving user control over folder access
