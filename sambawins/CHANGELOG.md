@@ -1,6 +1,6 @@
 # Changelog
 
-## 22.4.0
+## 22.4.1
 
 - Enable config options for WINS Server
 - Enable config options for MasterBrowser mode
