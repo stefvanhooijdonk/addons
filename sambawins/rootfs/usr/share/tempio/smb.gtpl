@@ -3,13 +3,11 @@
    workgroup = {{ .workgroup }}
    server string = Samba Home Assistant
 
-   # stef - add wins support add local browser master
    wins support = yes
    domain master = yes
    preferred master = yes
    local master = yes
    os level = 255
-   # end stef - add wins support add local browser master
 
    security = user
    ntlm auth = yes
