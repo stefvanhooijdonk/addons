@@ -1,7 +1,7 @@
 [global]
    netbios name = {{ env "HOSTNAME" }}
    workgroup = {{ .workgroup }}
-   server string = Samba Home Assistant
+   server string = Samba Home Assistant with WINS
 
    wins support = yes
    domain master = yes
