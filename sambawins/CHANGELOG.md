@@ -1,4 +1,8 @@
 # Changelog
+## 12.4.1
+
+- fix error in comment in samba config file
+
 ## 12.4.0
 
 - Add the ability to enable and disable specific shares, improving user control over folder access
