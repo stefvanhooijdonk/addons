@@ -1,5 +1,9 @@
 # Changelog
 
+## 22.4.2
+
+- Explicit standalone server
+
 ## 22.4.1
 
 - Enable config options for WINS Server.
