@@ -1,5 +1,9 @@
 # Changelog
 
+## 22.4.3
+
+- Update in docs
+
 ## 22.4.2
 
 - Explicit standalone server
