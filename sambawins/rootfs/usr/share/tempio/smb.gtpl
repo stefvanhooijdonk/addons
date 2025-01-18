@@ -14,6 +14,8 @@
    os level = 255
    {{ end }}
 
+   server role = standalone server
+
    security = user
    ntlm auth = yes
    idmap config * : backend = tdb
