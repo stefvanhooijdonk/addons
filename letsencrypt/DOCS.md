@@ -51,6 +51,7 @@ dns-dnsmadeeasy
 dns-duckdns
 dns-dreamhost
 dns-dynu
+dns-eurodns
 dns-gehirn
 dns-godaddy
 dns-google
@@ -61,7 +62,7 @@ dns-joker
 dns-linode
 dns-loopia
 dns-luadns
-dns-mijn-host
+dns-mijn-host (currently disable - see changelog)
 dns-njalla
 dns-noris
 dns-simply
@@ -78,7 +79,7 @@ dns-inwx
 dns-porkbun
 dns-easydns
 dns-domainoffensive
-dns-websupport
+dns-websupport (currently disable - see changelog)
 ```
 </details>
 
@@ -105,6 +106,8 @@ dnsmadeeasy_api_key: ''
 dnsmadeeasy_secret_key: ''
 duckdns_token: ''
 dynu_auth_token: ''
+eurodns_applicationId: ''
+eurodns_apiKey: ''
 google_creds: ''
 hetzner_api_token: ''
 gehirn_api_token: ''
@@ -137,6 +140,7 @@ rfc2136_port: ''
 rfc2136_name: ''
 rfc2136_secret: ''
 rfc2136_algorithm: ''
+rfc2136_sign_query: false
 aws_access_key_id: ''
 aws_secret_access_key: ''
 sakuracloud_api_token: ''
@@ -782,6 +786,8 @@ An example configuration:
     rfc2136_name: letsencrypt
     rfc2136_secret: "secret-key"
     rfc2136_algorithm: HMAC-SHA512
+    # Optional: Enable TSIG key signing for DNS queries (useful for BIND multiple views)
+    rfc2136_sign_query: true
   ```
 
 </details>
@@ -974,8 +980,28 @@ dns:
 </details>
 
 <details>
+  <summary>Eurodns DNS challenge</summary>
 
-  <summary>WebSupport</summary>
+  You can configure the APP id and the API key in the API Users area of the Eurodns control panel: https://my.eurodns.com/apiusers
+
+```yaml
+domains:
+  - your.domain.tld
+certfile: fullchain.pem
+keyfile: privkey.pem
+challenge: dns
+dns:
+  provider: dns-eurodns
+  eurodns_applicationId: X-APP-ID
+  eurodns_apiKey: X-API-KEY
+  propagation_seconds: 60
+```
+
+</details>
+
+<details>
+
+  <summary>WebSupport (currently disable - see changelog)</summary>
 
 An identifier and secret key have to be obtained to use this module (see https://admin.websupport.sk/sk/auth/apiKey).
 
@@ -1085,7 +1111,7 @@ The API key assigned to your Simply.com account can be found in your Simply.com 
 
 
 <details>
-  <summary>mijn.host DNS challenge</summary>
+  <summary>mijn.host DNS challenge (currently disable - see changelog)</summary>
 
   ```yaml
   email: your.email@example.com
@@ -1127,6 +1153,7 @@ dns-dnsmadeeasy
 dns-duckdns
 dns-dreamhost
 dns-dynu
+dns-eurodns
 dns-gehirn
 dns-google
 dns-hetzner
@@ -1135,7 +1162,7 @@ dns-ionos
 dns-linode
 dns-loopia
 dns-luadns
-dns-mijn-host
+dns-mijn-host (currently disable - see changelog)
 dns-njalla
 dns-noris
 dns-plesk
@@ -1153,7 +1180,7 @@ dns-inwx
 dns-porkbun
 dns-easydns
 dns-domainoffensive
-dns-websupport
+dns-websupport (currently disable - see changelog)
 ```
 
 ## Support

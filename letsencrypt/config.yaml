@@ -1,5 +1,6 @@
 ---
-version: 5.2.10
+version: 5.3.2
+breaking_versions: [5.3.0]
 slug: letsencrypt
 name: Let's Encrypt
 description: Manage certificate from Let's Encrypt
@@ -60,6 +61,8 @@ schema:
     dnsmadeeasy_secret_key: str?
     duckdns_token: str?
     dynu_auth_token: str?
+    eurodns_applicationId: str?
+    eurodns_apiKey: str?
     gandi_api_key: str?
     gandi_token: str?
     gandi_sharing_id: str?
@@ -105,7 +108,7 @@ schema:
     propagation_seconds: int(60,3600)?
     provider: "list(dns-azure|dns-cloudflare|dns-cloudns|dns-desec|\
       dns-digitalocean|dns-directadmin|dns-dnsimple|dns-dnsmadeeasy|\
-      dns-duckdns|dns-dynu|dns-gehirn|dns-godaddy|dns-google|\
+      dns-duckdns|dns-dynu|dns-eurodns|dns-gehirn|dns-godaddy|dns-google|\
       dns-hetzner|dns-infomaniak|dns-ionos|dns-joker|dns-linode|dns-loopia|dns-luadns|\
       dns-mijn-host|dns-njalla|dns-nsone|dns-porkbun|dns-ovh|dns-rfc2136|dns-route53|\
       dns-sakuracloud|dns-namecheap|dns-netcup|dns-simply|dns-gandi|dns-transip|dns-inwx|\
@@ -116,6 +119,7 @@ schema:
     rfc2136_port: str?
     rfc2136_secret: str?
     rfc2136_server: str?
+    rfc2136_sign_query: bool?
     sakuracloud_api_secret: str?
     sakuracloud_api_token: str?
     transip_api_key: str?
